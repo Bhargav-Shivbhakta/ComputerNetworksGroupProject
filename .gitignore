@@ -54,3 +54,12 @@ ns3/**/scratch/*.exe
 # If ns-3 produces python cache or temp files
 ns3/**/__pycache__/
 *.zip
+# ignore results and large artifacts
+results/
+ml/rl_models/
+*.zip
+CNGP_project_backup.zip
+__pycache__/
+*.pyc
+.vscode/
+.ipynb_checkpoints/
