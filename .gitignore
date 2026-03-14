@@ -1,0 +1,56 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
+
+# =========================
+# Data / logs / outputs
+# =========================
+data/
+logs/
+experiments/
+results/
+*.csv
+*.json
+*.pkl
+*.joblib
+*.pt
+*.onnx
+
+# =========================
+# OS / editors
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*~
+*.swp
+
+# =========================
+# ns-3: ignore builds & large artifacts
+# Track only our custom ns-3 scratch scripts/configs.
+# =========================
+ns3/ns-allinone-*/        # if you keep the installer bundle in-repo
+ns3/**/build/
+ns3/**/cmake-cache/
+ns3/**/CMakeCache.txt
+ns3/**/CMakeFiles/
+ns3/**/.lock-ns3*
+ns3/**/ns3
+ns3/**/scratch/*.o
+ns3/**/scratch/*.obj
+ns3/**/scratch/*.out
+ns3/**/scratch/*.exe
+
+# If ns-3 produces python cache or temp files
+ns3/**/__pycache__/
+*.zip
