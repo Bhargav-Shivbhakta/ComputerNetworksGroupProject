@@ -14,10 +14,7 @@ venv/
 # =========================
 # Data / logs / outputs
 # =========================
-data/
-logs/
 experiments/
-results/
 *.csv
 *.json
 *.pkl
@@ -63,4 +60,3 @@ __pycache__/
 *.pyc
 .vscode/
 .ipynb_checkpoints/
-ns3/
