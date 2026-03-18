@@ -1,0 +1,11 @@
+numpy
+pandas
+matplotlib
+scikit-learn
+xgboost
+joblib
+gymnasium
+stable-baselines3
+tensorboard
+tqdm
+rich

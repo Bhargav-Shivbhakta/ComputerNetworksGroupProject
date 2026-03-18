@@ -1,0 +1,35 @@
+# Scenario grid for SPRCC dataset generation
+# Fields:
+#  - name: short id for scenario
+#  - bw_mbps: bottleneck bandwidth in Mbps
+#  - rtt_ms: round-trip time in ms
+#  - queue_pkts_pct: queue size as percentage of the bandwidth-delay product (approx)
+#  - sender_rate_mbps: source offered rate (UDP app) in Mbps
+#  - cross_traffic: "tcp" or "udp" or "mixed"
+#  - trace_type: static | step | randomwalk | cellular
+scenarios:
+  - name: bw2_rtt20_q25_sr12
+    bw_mbps: 2
+    rtt_ms: 20
+    queue_pkts_pct: 25
+    sender_rate_mbps: 12
+    cross_traffic: mixed
+    trace_type: randomwalk
+
+  - name: bw5_rtt40_q50_sr6
+    bw_mbps: 5
+    rtt_ms: 40
+    queue_pkts_pct: 50
+    sender_rate_mbps: 6
+    cross_traffic: mixed
+    trace_type: step
+
+  - name: bw10_rtt80_q100_sr12
+    bw_mbps: 10
+    rtt_ms: 80
+    queue_pkts_pct: 100
+    sender_rate_mbps: 12
+    cross_traffic: tcp
+    trace_type: cellular
+
+# Add more combos programmatically if needed

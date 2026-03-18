@@ -1,0 +1,26 @@
+# Logging schema and label definition used in experiment data collection
+# Time resolution: 100 ms (10 Hz) by default
+time_resolution_ms: 100
+
+# Per-sample features (sliding window will aggregate these)
+features:
+  - name: sent_bytes                    # bytes sent in the interval
+  - name: acked_bytes                    # bytes acknowledged in the interval
+  - name: rtt_ms                         # measured RTT (ms)
+  - name: delay_gradient                 # delta RTT / delta t
+  - name: loss_rate                      # fraction lost in interval
+  - name: queue_len_pkts                 # approximation or queue probe
+  - name: cwnd_bytes                     # if available
+  - name: in_flight_bytes                # bytes in flight
+  - name: recv_throughput_mbps
+  - name: send_rate_mbps
+
+# Label: available bandwidth (regression), horizon in ms
+label:
+  name: avail_bw_mbps
+  horizon_ms: 1000    # 1 second ahead
+
+# meta fields
+meta:
+  topology: dumbbell
+  logger_version: 1.0
