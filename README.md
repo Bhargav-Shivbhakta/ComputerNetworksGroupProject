@@ -197,6 +197,3 @@ Machine Learning for Networking
 # License
 
 This project is intended for academic research and educational use.
-EOF
-
-This command replaces your README with a full professional project description.
